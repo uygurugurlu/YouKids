@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 import YouTube from 'react-native-youtube';
 
 import React, {Component} from 'react';
