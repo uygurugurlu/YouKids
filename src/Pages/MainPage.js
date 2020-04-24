@@ -8,6 +8,9 @@ import {
   FlatList,
   View,
 } from 'react-native';
+
+import CharacterComponent from "../Components/CharacterComponent";
+
 const data = [
   {id: '1', name: 'sa'},
   {id: '3', name: 'sa'},
@@ -26,7 +29,7 @@ export default class MainPage extends Component {
           <FlatList
             data={data}
             renderItem={({item}) => (
-              <Text style={{width: 300}}>{item.name}</Text>
+              <CharacterComponent sa={item.name}></CharacterComponent>
             )}
             keyExtractor={item => item.id}
             horizontal={true}
@@ -39,9 +42,10 @@ export default class MainPage extends Component {
 const styles = StyleSheet.create({
   charactersSection: {},
   headerContainer: {
-    height: 50,
+    height: 30,
     marginHorizontal: 10,
     marginVertical: 10,
+    justifyContent:"center",
   },
   header: {
     fontSize: 15,
