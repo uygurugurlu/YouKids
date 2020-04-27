@@ -1,5 +1,5 @@
 # YouKids
-A React Native application for kids to watch filtered, safe videos.
+A React Native application for kids to watch filtered and safe videos.
 
 # Release History
 
